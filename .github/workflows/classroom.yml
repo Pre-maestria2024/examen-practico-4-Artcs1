@@ -37,10 +37,23 @@ jobs:
         comparison-method: exact
         timeout: 1
         max-score: 1
+    - name: test1-3
+      id: test1-3
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-3
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input3.txt
+        input: ''
+        expected-output: '32606'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TEST1-1_RESULTS: "${{steps.test1-1.outputs.result}}"
         TEST1-2_RESULTS: "${{steps.test1-2.outputs.result}}"
+        TEST1-3_RESULTS: "${{steps.test1-3.outputs.result}}"
       with:
-        runners: test1-1,test1-2
+        runners: test1-1,test1-2,test1-3
