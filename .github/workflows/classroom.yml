@@ -133,6 +133,126 @@ jobs:
         comparison-method: exact
         timeout: 1
         max-score: 1
+    - name: test1-11
+      id: test1-11
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-11
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input11.txt
+        input: ''
+        expected-output: '10031'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-12
+      id: test1-12
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-12
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input12.txt
+        input: ''
+        expected-output: '12217'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-13
+      id: test1-13
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-13
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input13.txt
+        input: ''
+        expected-output: '25809'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-14
+      id: test1-14
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-14
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input14.txt
+        input: ''
+        expected-output: '22909'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-15
+      id: test1-15
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-15
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input15.txt
+        input: ''
+        expected-output: '29982'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-16
+      id: test1-16
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-16
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input16.txt
+        input: ''
+        expected-output: '4519'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-17
+      id: test1-17
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-17
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input17.txt
+        input: ''
+        expected-output: '19927'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-18
+      id: test1-18
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-18
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input18.txt
+        input: ''
+        expected-output: '40157'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-19
+      id: test1-19
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-19
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input19.txt
+        input: ''
+        expected-output: '3057'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-20
+      id: test1-20
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-20
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input20.txt
+        input: ''
+        expected-output: '3485'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
@@ -146,5 +266,15 @@ jobs:
         TEST1-8_RESULTS: "${{steps.test1-8.outputs.result}}"
         TEST1-9_RESULTS: "${{steps.test1-9.outputs.result}}"
         TEST1-10_RESULTS: "${{steps.test1-10.outputs.result}}"
+        TEST1-11_RESULTS: "${{steps.test1-11.outputs.result}}"
+        TEST1-12_RESULTS: "${{steps.test1-12.outputs.result}}"
+        TEST1-13_RESULTS: "${{steps.test1-13.outputs.result}}"
+        TEST1-14_RESULTS: "${{steps.test1-14.outputs.result}}"
+        TEST1-15_RESULTS: "${{steps.test1-15.outputs.result}}"
+        TEST1-16_RESULTS: "${{steps.test1-16.outputs.result}}"
+        TEST1-17_RESULTS: "${{steps.test1-17.outputs.result}}"
+        TEST1-18_RESULTS: "${{steps.test1-18.outputs.result}}"
+        TEST1-19_RESULTS: "${{steps.test1-19.outputs.result}}"
+        TEST1-20_RESULTS: "${{steps.test1-20.outputs.result}}"
       with:
-        runners: test1-1,test1-2,test1-3,test1-4,test1-5,test1-6,test1-7,test1-8,test1-9,test1-10
+        runners: test1-1,test1-2,test1-3,test1-4,test1-5,test1-6,test1-7,test1-8,test1-9,test1-10,test1-11,test1-12,test1-13,test1-14,test1-15,test1-16,test1-17,test1-18,test1-19,test1-20
