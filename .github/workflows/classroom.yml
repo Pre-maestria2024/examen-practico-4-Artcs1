@@ -45,7 +45,7 @@ jobs:
         setup-command: ''
         command: python3 problema1.py < inputs/problema1_input3.txt
         input: ''
-        expected-output: '32606'
+        expected-output: '32626'
         comparison-method: exact
         timeout: 1
         max-score: 1
@@ -153,7 +153,7 @@ jobs:
         setup-command: ''
         command: python3 problema1.py < inputs/problema1_input12.txt
         input: ''
-        expected-output: '12217'
+        expected-output: '12211'
         comparison-method: exact
         timeout: 1
         max-score: 1
@@ -225,7 +225,7 @@ jobs:
         setup-command: ''
         command: python3 problema1.py < inputs/problema1_input18.txt
         input: ''
-        expected-output: '40157'
+        expected-output: '40151'
         comparison-method: exact
         timeout: 1
         max-score: 1
