@@ -49,11 +49,102 @@ jobs:
         comparison-method: exact
         timeout: 1
         max-score: 1
+    - name: test1-4
+      id: test1-4
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-4
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input4.txt
+        input: ''
+        expected-output: '44042'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-5
+      id: test1-5
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-5
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input5.txt
+        input: ''
+        expected-output: '266'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-6
+      id: test1-6
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-6
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input6.txt
+        input: ''
+        expected-output: '30942'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-7
+      id: test1-7
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-7
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input7.txt
+        input: ''
+        expected-output: '30048'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-8
+      id: test1-8
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-8
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input8.txt
+        input: ''
+        expected-output: '46000'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-9
+      id: test1-9
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-9
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input9.txt
+        input: ''
+        expected-output: '29609'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
+    - name: test1-10
+      id: test1-10
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test1-10
+        setup-command: ''
+        command: python3 problema1.py < inputs/problema1_input10.txt
+        input: ''
+        expected-output: '6365'
+        comparison-method: exact
+        timeout: 1
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TEST1-1_RESULTS: "${{steps.test1-1.outputs.result}}"
         TEST1-2_RESULTS: "${{steps.test1-2.outputs.result}}"
         TEST1-3_RESULTS: "${{steps.test1-3.outputs.result}}"
+        TEST1-4_RESULTS: "${{steps.test1-4.outputs.result}}"
+        TEST1-5_RESULTS: "${{steps.test1-5.outputs.result}}"
+        TEST1-6_RESULTS: "${{steps.test1-6.outputs.result}}"
+        TEST1-7_RESULTS: "${{steps.test1-7.outputs.result}}"
+        TEST1-8_RESULTS: "${{steps.test1-8.outputs.result}}"
+        TEST1-9_RESULTS: "${{steps.test1-9.outputs.result}}"
+        TEST1-10_RESULTS: "${{steps.test1-10.outputs.result}}"
       with:
-        runners: test1-1,test1-2,test1-3
+        runners: test1-1,test1-2,test1-3,test1-4,test1-5,test1-6,test1-7,test1-8,test1-9,test1-10
