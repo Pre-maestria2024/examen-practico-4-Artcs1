@@ -36,6 +36,7 @@ jobs:
         expected-output: '33'
         comparison-method: exact
         timeout: 1
+        max-score: 1
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
