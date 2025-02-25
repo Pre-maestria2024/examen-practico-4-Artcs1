@@ -28,6 +28,7 @@ def main():
 		total+=d
 
 	r = dp(H,D,n)
+	
 	print(total-r)
 
 if __name__ == '__main__':
