@@ -8,10 +8,11 @@ def dp(weights, values, W):
 		weight = weights[i]
 		value  = values[i]
 
-		for w in range(weight, 100001):
+		for w in range(100000, weight-1, -1):
 			memo[w] = min(memo[w], memo[w-weight] + value)
 
 	res = float('inf')
+	#print(memo)
 	for w in range(W, 100001):
 		res = min(res, memo[w])
 
@@ -28,9 +29,7 @@ def main():
 		total+=d
 
 	r = dp(H,D,n)
-	
-	print(total-r)
+	print(max(0,total-r))
 
 if __name__ == '__main__':
 	main()
-
